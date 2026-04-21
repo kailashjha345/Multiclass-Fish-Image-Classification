@@ -52,7 +52,7 @@ export function ProbabilityChart({ predictions }: ProbabilityChartProps) {
               width={95}
             />
             <Tooltip
-              formatter={(value: number) => [`${value.toFixed(1)}%`, "Confidence"]}
+              formatter={(value) => [`${Number(value).toFixed(1)}%`, "Confidence"]}
               contentStyle={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
